@@ -1,0 +1,12 @@
+number = int(input("How many subjects are there: "))
+total_marks = number * 100
+mark = 0
+
+for i in range(1, number+1):
+    marks = int(input(f"Enter the mark of subject {i}: "))
+    mark += marks
+
+percentage = (mark/total_marks) * 100
+
+print("Total marks you obtain is", mark, "out of", total_marks)
+print("The percentage of", number, "subjects is", percentage)
